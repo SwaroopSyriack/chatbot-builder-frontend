@@ -1,0 +1,38 @@
+/* Home.css */
+.main-container {
+    display: flex;
+    height: 100vh;
+    /* Full height */
+    width: 100%;
+    overflow: hidden;
+    /* Prevents extra scroll */
+}
+
+.Sidebar {
+    width: 80px;
+    /* Adjust width as needed */
+    background-color: #1e293b;
+    /* Dark sidebar color */
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    /* Fixes it to the left */
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.home-content {
+    flex-grow: 1;
+    background-color: #f8fafc;
+    padding: 20px;
+    margin-left: 80px;
+    /* Same width as Sidebar */
+    width: calc(100% - 80px);
+    overflow-y: auto;
+    /* Enables scrolling if needed */
+}
